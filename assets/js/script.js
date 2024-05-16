@@ -22,6 +22,13 @@ document.addEventListener("DOMContentLoaded", function() {
  * this function is a main loop on page load, and user's submit answer
  */
 function runGame(gameType) {
+
+    // This removes the answer input allowing for another go
+    document.getElementById("answer-box").value = "";
+    
+    // This will ensure focus into the answer box 
+    document.getElementById("answer-box").focus();
+   
     // creates two random numbers between 1-25
     let num1 = Math.floor(Math.random() * 25) + 1;
     let num2 = Math.floor(Math.random() * 25) + 1;
