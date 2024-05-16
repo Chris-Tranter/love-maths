@@ -16,8 +16,14 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+/**
+ * (This is a function DOCSTRING) used to define a .js function
+ * this function is a main loop on page load, and user's submit answer
+ */
 function runGame() {
-
+    // creates two random numbers between 1-25
+    let num1 = Math.floor(Math.random() * 25 + 1);
+    let num2 = Math.floor(Math.random() * 25 + 1);
 }
 
 function checkAnswer() {
